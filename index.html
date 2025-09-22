@@ -23,25 +23,68 @@
             color: var(--text-color);
             background-color: var(--background-color);
             margin: 0;
-            padding: 20px;
+            padding: 0; /* Changed padding to 0 for body */
         }
+        
+        /* --- 新增：顶部背景区域 --- */
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/background/background1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px 100px 20px; /* Increased bottom padding to make space for avatar */
+            text-align: center;
+        }
+        .hero-section h1 {
+            color: white;
+            font-size: 3em;
+            font-weight: 700;
+            margin: 0;
+            border: none;
+        }
+        .hero-section .contact-info {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .hero-section .contact-info a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            transition: border-bottom 0.3s ease;
+        }
+         .hero-section .contact-info a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        /* --- 新增：圆形头像样式 --- */
+        .profile-avatar {
+            display: block;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 6px solid white;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            margin: -80px auto 30px auto; /* Negative margin pulls it up */
+            position: relative;
+            z-index: 10;
+            object-fit: cover; /* Prevents image distortion */
+        }
+
         .container {
             max-width: 800px;
-            margin: 20px auto;
+            margin: 0 auto; /* Changed margin */
             background: var(--container-bg);
             border-radius: 12px;
             box-shadow: 0 8px 32px rgba(0,0,0,0.07);
             padding: 40px 50px;
+            position: relative;
+            z-index: 5;
         }
-        h1, h2, h3 {
+        h2, h3 {
             color: var(--heading-color);
             font-weight: 700;
-        }
-        h1 {
-            font-size: 2.8em;
-            text-align: center;
-            margin-bottom: 10px;
-            border-bottom: none;
         }
         h2 {
             font-size: 1.8em;
@@ -51,21 +94,6 @@
         h3 {
              font-size: 1.1em;
              font-weight: 600;
-        }
-        .contact-info {
-            text-align: center;
-            margin-bottom: 40px;
-            color: var(--subtle-text-color);
-            font-size: 1.1em;
-        }
-        .contact-info a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-        .contact-info a:hover {
-            color: #0056b3;
         }
         .section {
             margin-bottom: 35px;
@@ -122,15 +150,18 @@
     </style>
 </head>
 <body>
+    
+    <header class="hero-section">
+        <h1>Fan Xuejiao (Ariel)</h1>
+        <p class="contact-info">
+            Beijing, China | <a href="mailto:fanlaplace369@gmail.com">fanlaplace369@gmail.com</a>
+        </p>
+    </header>
+
+    <img src="/images/myself.jpg" alt="Fan Xuejiao (Ariel) profile picture" class="profile-avatar">
 
     <div class="container">
-        <header>
-            <h1>Fan Xuejiao (Ariel)</h1>
-            <p class="contact-info">
-                Beijing, China | <a href="mailto:fanlaplace369@gmail.com">fanlaplace369@gmail.com</a>
-            </p>
-        </header>
-
+        
         <div class="section" id="profile">
             <h2>Profile</h2>
             <p>
