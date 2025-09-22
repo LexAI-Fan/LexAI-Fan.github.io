@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fan Xuejiao — AI × Law</title>
+  <meta name="description" content="AI × Law — algorithmic justice, data governance, and governance-ready evaluation.">
+  <meta property="og:title" content="Fan Xuejiao — AI × Law">
+  <meta property="og:description" content="Algorithmic justice, data governance, governance-ready evaluation.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/images/favicon.png" />
+  <!-- Font: system stack; you can swap to Inter/Roboto later -->
+  <!-- Font Awesome (icons) -->
+  <script defer src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Main styles -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <!-- Optional extra sheet to mirror your friend's structure -->
+  <link rel="stylesheet" href="/css/stylesheet.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#top">Fan Xuejiao</a>
+      <button class="nav-toggle" aria-label="Open Menu" onclick="document.body.classList.toggle('menu-open')">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#pubs">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero" id="top">
+      <h1>AI × Law</h1>
+      <p>Algorithmic justice, data governance, and governance-ready evaluation.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">See Projects</a>
+        <a class="btn ghost" href="/assets/cv/Fan_Xuejiao_CV.pdf">Download CV</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I’m Fan Xuejiao (Ariel). I work at the intersection of <strong>Artificial Intelligence & Law</strong>—
+        focusing on <em>algorithmic bias & discrimination</em>, participatory auditing, and
+        governance-ready evaluation (calibration, risk-coverage, selective abstention).
+      </p>
+      <ul class="bullets">
+        <li>Legal knowledge graphs & judicial analytics</li>
+        <li>Participatory Harm Auditing (PHAWM) workflows</li>
+        <li>Safety cards that state guarantees, thresholds, and residual risk</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>PHAWM — Participatory Harm Auditing</h3>
+          <p>Templates + notebooks to turn community reports into testable hypotheses and evidence packs.</p>
+          <p class="meta">Repo: <code>LexAI-Fan/phawm</code> (coming)</p>
+        </article>
+
+        <article class="card">
+          <h3>Legal Knowledge Graph</h3>
+          <p>ETL + NLP pipeline over court decisions to study liability allocation and doctrine drift.</p>
+          <p class="meta">Repo: <code>LexAI-Fan/legal-kg-courts</code> (coming)</p>
+        </article>
+
+        <article class="card">
+          <h3>Governance-Ready Safety Cards</h3>
+          <p>Risk-coverage plots, uncertainty calibration, and enforceable thresholds for deployment.</p>
+          <p class="meta">Repo: <code>LexAI-Fan/safety-cards</code> (coming)</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="pubs" class="section">
+      <h2>Publications & Writing</h2>
+      <ul class="list">
+        <li><strong>Algorithmic Justice in Law Enforcement</strong> — proposal & technical notes (in prep).</li>
+        <li><strong>Right to Data Portability</strong> — implementation study (MA dissertation).</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:fanlaplace369@gmail.com">fanlaplace369@gmail.com</a> &nbsp;&nbsp;
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/LexAI-Fan">GitHub: LexAI-Fan</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Fan Xuejiao · Built with vanilla HTML/CSS on GitHub Pages</p>
+  </footer>
+
+  <script>
+    // tiny helper for the footer year + mobile nav toggle a11y
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
