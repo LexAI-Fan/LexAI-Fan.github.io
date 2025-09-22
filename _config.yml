@@ -1,0 +1,54 @@
+# Site settings
+lang: en
+
+# Basic metadata
+name: LexAI-Fan
+
+title: "LexAI-Fan"
+description: >-
+  Legal Tech | NLP · Large Language Models (LLMs) · Knowledge Graphs · Legal Argument Mining | Python · PyTorch
+url: "https://LexAI-Fan.github.io"
+baseurl: ""
+
+# Author and social
+author:
+  name: "LexAI-Fan"
+  github: LexAI-Fan
+
+github_username: LexAI-Fan
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Theme configuration
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /posts/:title/
+
+# Defaults for Markdown files
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: "LexAI-Fan"
+      comments: false
+
+# Exclude development artifacts from the build
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor"
+  - "tmp"
+  - "README.md"
