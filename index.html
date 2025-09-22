@@ -1,168 +1,111 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fan Xuejiao (Ariel) - Personal Homepage</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-            line-height: 1.6;
-            color: #333;
-            background-color: #fdfdfd;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            padding: 30px 40px;
-        }
-        h1, h2, h3 {
-            color: #1a2a45;
-            border-bottom: 2px solid #eef2f7;
-            padding-bottom: 10px;
-        }
-        h1 {
-            font-size: 2.5em;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        .contact-info {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #555;
-        }
-        .contact-info a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .section-title {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
-        .job-title {
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        .job-meta {
-            color: #666;
-            font-style: italic;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-        }
-        .skill-category {
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 6px;
-            border-left: 4px solid #007bff;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #888;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fan Xuejiao — AI × Law</title>
+  <meta name="description" content="AI × Law — algorithmic justice, data governance, and governance-ready evaluation.">
+  <meta property="og:title" content="Fan Xuejiao — AI × Law">
+  <meta property="og:description" content="Algorithmic justice, data governance, governance-ready evaluation.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/images/favicon.png" />
+  <!-- Font: system stack; you can swap to Inter/Roboto later -->
+  <!-- Font Awesome (icons) -->
+  <script defer src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Main styles -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <!-- Optional extra sheet to mirror your friend's structure -->
+  <link rel="stylesheet" href="/css/stylesheet.css" />
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#top">Fan Xuejiao</a>
+      <button class="nav-toggle" aria-label="Open Menu" onclick="document.body.classList.toggle('menu-open')">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#pubs">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero" id="top">
+      <h1>AI × Law</h1>
+      <p>Algorithmic justice, data governance, and governance-ready evaluation.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">See Projects</a>
+        <a class="btn ghost" href="/assets/cv/Fan_Xuejiao_CV.pdf">Download CV</a>
+      </div>
+    </section>
+  </header>
 
-    <div class="container">
-        <header>
-            [cite_start]<h1>Fan Xuejiao (Ariel) [cite: 21]</h1>
-            <p class="contact-info">
-                Beijing, China | [cite_start]<a href="mailto:fanlaplace369@gmail.com">fanlaplace369@gmail.com</a> [cite: 22]
-            </p>
-        </header>
+  <main>
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I’m Fan Xuejiao (Ariel). I work at the intersection of <strong>Artificial Intelligence & Law</strong>—
+        focusing on <em>algorithmic bias & discrimination</em>, participatory auditing, and
+        governance-ready evaluation (calibration, risk-coverage, selective abstention).
+      </p>
+      <ul class="bullets">
+        <li>Legal knowledge graphs & judicial analytics</li>
+        <li>Participatory Harm Auditing (PHAWM) workflows</li>
+        <li>Safety cards that state guarantees, thresholds, and residual risk</li>
+      </ul>
+    </section>
 
-        <div class="section" id="profile">
-            <h2 class="section-title">Profile</h2>
-            <p>
-                [cite_start]Research applicant focusing on making LLM system behaviour legible by combining learning with reasoning, calibrated uncertainty, selective abstention, and rationale logging[cite: 25]. [cite_start]My work in Accountable ML & AI governance involves protocol compilation (YAML), rationale/change logs, and designing dispute/appeal workflows for trustworthy deployment[cite: 23]. [cite_start]I prototype study UIs (Figma/HTML/CSS/JS) and run fully reproducible analyses (Docker, seeds, artefact hashes)[cite: 26].
-            </p>
-        </div>
+    <section id="projects" class="section">
+      <h2>Projects</h2>
 
-        <div class="section" id="experience">
-            <h2 class="section-title">Research Experience</h2>
-            <div>
-                [cite_start]<p class="job-title">Research Assistant (part-time) [cite: 28]</p>
-                <p class="job-meta">School of Computer Science, Beijing Institute of Technology | [cite_start]Beijing, China 2024-Present [cite: 28]</p>
-                <ul>
-                    [cite_start]<li>Prototyped conversational-agent UIs (identity cues; uncertainty/refusal messaging) with full interaction logging (Figma, HTML/CSS/JS)[cite: 29].</li>
-                    [cite_start]<li>Implemented calibrated uncertainty and selective abstention; analysed accuracy, time-on-task, and trust metrics (Python/R)[cite: 30].</li>
-                    [cite_start]<li>Compiled stakeholder preferences into executable YAML protocols; tuned operating points (τ for precision at minimum coverage; source-weighting ω)[cite: 31].</li>
-                </ul>
-            </div>
-            <div>
-                [cite_start]<p class="job-title">Research Assistant [cite: 34]</p>
-                <p class="job-meta">Institute of Intelligent Rule of Law, Tsinghua University | [cite_start]Beijing, China 2022-2023 [cite: 32, 34]</p>
-                <ul>
-                    [cite_start]<li>Translated legal/policy requirements into audit checklists and machine-readable protocols; stress-tested thresholds to balance FP/FN risk[cite: 35].</li>
-                    [cite_start]<li>Mapped fairness, verifiability, and reliability to concrete evaluation metrics and sampling rules; maintained rationale/change logs[cite: 36].</li>
-                </ul>
-            </div>
-             <div>
-                [cite_start]<p class="job-title">Policy/UX Intern, Content Governance [cite: 38]</p>
-                <p class="job-meta">ByteDance | [cite_start]Beijing, China 2021 [cite: 38]</p>
-                <ul>
-                    [cite_start]<li>Converted platform rules and appeal data into monitoring metrics (misclassification, dispute tickets, latency) and decision logs[cite: 39].</li>
-                    [cite_start]<li>Facilitated cross-functional reviews (Policy, Legal, Product) with structured rationales to justify rule updates[cite: 40].</li>
-                </ul>
-            </div>
-        </div>
+      <div class="cards">
+        <article class="card">
+          <h3>PHAWM — Participatory Harm Auditing</h3>
+          <p>Templates + notebooks to turn community reports into testable hypotheses and evidence packs.</p>
+          <p class="meta">Repo: <code>LexAI-Fan/phawm</code> (coming)</p>
+        </article>
 
-        <div class="section" id="skills">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>HCI & Methods</h3>
-                    [cite_start]<p>User-centred design; consent/debrief; task & survey design; within-subject and A/B studies; basic thematic analysis[cite: 53].</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Quant & Tools</h3>
-                    <p>Python (pandas; basic scikit-learn); R (t-tests, bootstrap CIs, effect sizes); Git; Docker; [cite_start]OSF/Zenodo; preregistration[cite: 54].</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Front-end & Prototyping</h3>
-                    <p>Figma; [cite_start]HTML/CSS/JS for study UIs and lightweight dashboards; instrumentation & logging[cite: 56].</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Governance & Knowledge Representation</h3>
-                    [cite_start]<p>GDPR/PIPL; algorithmic accountability; policy → metrics/protocols; argument maps → YAML rule templates[cite: 56, 57].</p>
-                </div>
-                 <div class="skill-category">
-                    <h3>Reproducibility</h3>
-                    [cite_start]<p>Locked dependencies; deterministic seeds; containerised runs; make-reproduce scripts[cite: 58].</p>
-                </div>
-            </div>
-        </div>
+        <article class="card">
+          <h3>Legal Knowledge Graph</h3>
+          <p>ETL + NLP pipeline over court decisions to study liability allocation and doctrine drift.</p>
+          <p class="meta">Repo: <code>LexAI-Fan/legal-kg-courts</code> (coming)</p>
+        </article>
 
-        <div class="section" id="education">
-            <h2 class="section-title">Education</h2>
-            [cite_start]<p><span class="job-title">JM (Juris Master), Interdisciplinary Law and Computer Science [cite: 60, 61]</span><br>Beijing Institute of Technology | [cite_start]Beijing, China (GPA: 3.73/4.00) [cite: 60, 61]</p>
-            <p><span class="job-title">B.Econ. [cite_start]International Economics & Trade (Science Track) [cite: 64]</span><br>Xi'an International University | [cite_start]Xi'an, China (GPA: 3.70/4.00) [cite: 64]</p>
-        </div>
-        
-        <footer>
-            <p>&copy; 2025 Fan Xuejiao (Ariel). All Rights Reserved.</p>
-        </footer>
-    </div>
+        <article class="card">
+          <h3>Governance-Ready Safety Cards</h3>
+          <p>Risk-coverage plots, uncertainty calibration, and enforceable thresholds for deployment.</p>
+          <p class="meta">Repo: <code>LexAI-Fan/safety-cards</code> (coming)</p>
+        </article>
+      </div>
+    </section>
 
+    <section id="pubs" class="section">
+      <h2>Publications & Writing</h2>
+      <ul class="list">
+        <li><strong>Algorithmic Justice in Law Enforcement</strong> — proposal & technical notes (in prep).</li>
+        <li><strong>Right to Data Portability</strong> — implementation study (MA dissertation).</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:fanlaplace369@gmail.com">fanlaplace369@gmail.com</a> &nbsp;&nbsp;
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/LexAI-Fan">GitHub: LexAI-Fan</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Fan Xuejiao · Built with vanilla HTML/CSS on GitHub Pages</p>
+  </footer>
+
+  <script>
+    // tiny helper for the footer year + mobile nav toggle a11y
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-```
