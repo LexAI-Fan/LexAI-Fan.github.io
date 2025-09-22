@@ -3,293 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fan Xuejiao (Ariel) | AI Governance & Accountable ML</title>
+    <title>Fan Xuejiao (Ariel) - Personal Homepage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --background-color: #121212;
-            --surface-color: #1e1e1e;
-            --primary-accent: #00aaff;
-            --text-primary: #e0e0e0;
-            --text-secondary: #a0a0a0;
-            --border-color: #333333;
-        }
-        html {
-            scroll-behavior: smooth;
+            --primary-color: #007bff;
+            --text-color: #34495e;
+            --heading-color: #2c3e50;
+            --background-color: #f8f9fa;
+            --container-bg: #ffffff;
+            --border-color: #eef2f7;
+            --subtle-text-color: #7f8c8d;
         }
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
             background-color: var(--background-color);
-            color: var(--text-primary);
             margin: 0;
             padding: 0;
         }
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 0 20px;
+        
+        /* --- 顶部背景区域 --- */
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background/background1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
         }
-        /* Navigation Bar */
-        nav {
-            padding: 15px 0;
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            background-color: rgba(18, 18, 18, 0.85);
-            backdrop-filter: blur(10px);
-            z-index: 100;
-        }
-        nav .container {
+        .hero-content {
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
         }
-        nav .nav-links a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            margin-left: 25px;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        nav .nav-links a:hover {
-            color: var(--primary-accent);
-        }
-        .nav-brand {
-            font-weight: 700;
-            font-size: 1.2em;
-        }
-        /* Hero Section */
-        .hero {
-            padding: 100px 0;
-            text-align: center;
-        }
-        .profile-avatar {
-            width: 160px;
-            height: 160px;
+        .hero-avatar {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            border: 4px solid var(--primary-accent);
-            margin-bottom: 20px;
+            border: 4px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            object-fit: cover;
         }
-        .hero h1 {
+        .hero-text {
+            margin-left: 30px;
+            text-align: left;
+        }
+        .hero-text h1 {
+            color: white;
             font-size: 3em;
-            margin: 10px 0;
-            color: #ffffff;
+            font-weight: 700;
+            margin: 0;
+            border: none;
         }
-        .hero .subtitle {
+        .hero-text .contact-info {
+            color: rgba(255, 255, 255, 0.9);
             font-size: 1.2em;
-            color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto 30px auto;
+            margin-top: 10px;
         }
-        .hero .cta-buttons a {
-            display: inline-block;
-            background-color: var(--primary-accent);
-            color: #ffffff;
-            padding: 12px 25px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 5px;
+        .hero-text .contact-info a {
+            color: white;
             font-weight: 600;
-            transition: transform 0.3s ease, background-color 0.3s ease;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            transition: border-bottom 0.3s ease;
         }
-        .hero .cta-buttons a:hover {
-            transform: translateY(-3px);
-            background-color: #0099e6;
+        .hero-text .contact-info a:hover {
+            border-bottom: 1px solid white;
         }
-        .hero .cta-buttons a.secondary {
-            background-color: transparent;
-            border: 1px solid var(--border-color);
-            color: var(--text-primary);
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto; /* Add margin to separate from hero */
+            background: var(--container-bg);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.07);
+            padding: 40px 50px;
+            position: relative;
+            z-index: 5;
         }
-        .hero .cta-buttons a.secondary:hover {
-            background-color: var(--surface-color);
-            border-color: var(--surface-color);
-        }
-        /* General Section Styling */
-        .section {
-            padding: 80px 0;
-            border-bottom: 1px solid var(--border-color);
-        }
-        .section:last-child {
-            border-bottom: none;
+        h2, h3 {
+            color: var(--heading-color);
+            font-weight: 700;
         }
         h2 {
-            font-size: 2.2em;
-            color: #ffffff;
-            margin-bottom: 40px;
-        }
-        /* Research Statement */
-        #about p {
-            font-size: 1.1em;
-            line-height: 1.8;
-        }
-        /* Publications */
-        .publication-item {
-            margin-bottom: 30px;
-        }
-        .publication-item .title {
-            font-size: 1.2em;
-            font-weight: 600;
-            color: var(--text-primary);
-        }
-        .publication-item .venue {
-            color: var(--text-secondary);
-            font-style: italic;
-        }
-        .publication-item .description {
-            font-size: 0.95em;
-        }
-        /* Experience */
-        .experience-item {
-            margin-bottom: 30px;
-        }
-        .job-title {
-            font-size: 1.2em;
-            font-weight: 600;
-        }
-        .job-meta {
-            color: var(--text-secondary);
-            margin-bottom: 10px;
-        }
-        /* Skills */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .skill-category {
-            background-color: var(--surface-color);
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-        }
-        .skill-category h3 {
-            margin-top: 0;
-            color: var(--text-primary);
-        }
-        code {
-            font-family: 'Source Code Pro', monospace;
-            background-color: #2c2c2c;
-            padding: 3px 6px;
-            border-radius: 4px;
-            font-size: 0.9em;
-        }
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 40px 0;
-            color: var(--text-secondary);
-        }
-    </style>
-</head>
-<body>
-
-    <nav>
-        <div class="container">
-            <div class="nav-brand">Fan Xuejiao (Ariel)</div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#research">Research</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-            </div>
-        </div>
-    </nav>
-
-    <header class="hero">
-        <img src="/images/myself.jpg" alt="Fan Xuejiao (Ariel) profile picture" class="profile-avatar">
-        <h1>Fan Xuejiao (Ariel)</h1>
-        <p class="subtitle">
-            AI Governance & Accountable ML Researcher, focusing on making complex AI systems legible, fair, and trustworthy.
-        </p>
-        <div class="cta-buttons">
-            <a href="CV_Fan_law_ai.pdf" class="primary">Download CV</a>
-            <a href="https://github.com/LexAI-Fan" class="secondary">GitHub</a>
-            </div>
-    </header>
-
-    <main class="container">
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>
-                I am a research applicant dedicated to addressing the critical challenge of legibility in large language models. My work aims to bridge the gap between pure learning-based systems and symbolic reasoning to build more transparent and accountable AI. I focus on developing robust frameworks for <strong>calibrated uncertainty</strong>, <strong>selective abstention</strong>, and <strong>rationale logging</strong>. My methodology emphasizes full reproducibility, utilizing containerized environments (<code>Docker</code>), deterministic seeding, and artifact hashing to ensure the reliability and verifiability of my findings.
-            </p>
-        </section>
-
-        <section id="research" class="section">
-            <h2>Publications & Key Outputs</h2>
-            <div class="publication-item">
-                <p class="title">Participatory Audit Mini-Bench for LLM-Assisted Writing</p>
-                <p class="venue">Key Project Output</p>
-                <p class="description">
-                    Developed a reproducible testing framework to investigate if value-derived operational protocols and calibrated parameters (τ, ω) can mitigate user over-trust and reduce errors without sacrificing coverage. The framework includes a protocol schema, a rule compiler, and a <code>make-reproduce</code> script.
-                </p>
-            </div>
-            <div class="publication-item">
-                <p class="title">AI Governance & Legal-Tech Integration</p>
-                <p class="venue">Major Project, National Social Science Foundation of China</p>
-                <p class="description">
-                    Led the translation of high-level legal principles into auditable protocol rules and operational evaluation criteria. Contributed to research on "AI in Online Dispute Resolution (ODR)" and "Legislative Responses to AI in Law Enforcement," focusing on accountability and verifiability.
-                </p>
-            </div>
-        </section>
-
-        <section id="experience" class="section">
-            <h2>Research Experience</h2>
-            <div class="experience-item">
-                <p class="job-title">Research Assistant (part-time)</p>
-                <p class="job-meta">School of Computer Science, Beijing Institute of Technology | 2024-Present</p>
-                <ul>
-                    <li>Prototyped conversational-agent UIs (<code>Figma</code>, <code>HTML/CSS/JS</code>) with full interaction logging to study user trust.</li>
-                    <li>Implemented calibrated uncertainty and selective abstention; analysed accuracy and time-on-task metrics using <code>Python</code> and <code>R</code>.</li>
-                    <li>Compiled stakeholder preferences into executable <code>YAML</code> protocols and tuned operating points (τ, ω).</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <p class="job-title">Research Assistant</p>
-                <p class="job-meta">Institute of Intelligent Rule of Law, Tsinghua University | 2022-2023</p>
-                <ul>
-                    <li>Translated legal/policy requirements into machine-readable protocols and stress-tested thresholds.</li>
-                    <li>Mapped fairness, verifiability, and reliability to concrete evaluation metrics and sampling rules.</li>
-                </ul>
-            </div>
-             <div class="experience-item">
-                <p class="job-title">Policy/UX Intern, Content Governance</p>
-                <p class="job-meta">ByteDance | 2021</p>
-                <ul>
-                    <li>Converted platform rules and appeal data into key monitoring metrics and structured decision logs.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>HCI & Methods</h3>
-                    <p>User-centred design, consent/debrief, task & survey design, within-subject and A/B studies.</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Quant & Tools</h3>
-                    <p><code>Python</code> (Pandas, Scikit-learn), <code>R</code> (t-tests, bootstrap CIs), <code>Git</code>, <code>Docker</code>, OSF/Zenodo.</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Governance & KR</h3>
-                    <p>GDPR/PIPL, algorithmic accountability, policy-to-protocol conversion, argument maps to <code>YAML</code> templates.</p>
-                </div>
-                 <div class="skill-category">
-                    <h3>Reproducibility</h3>
-                    <p>Locked dependencies, deterministic seeds, containerised runs, <code>make-reproduce</code> scripts.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 Fan Xuejiao (Ariel). All Rights Reserved.</p>
-    </footer>
-
-</body>
-</html>
+            font-size: 1.8em;
+            border-bottom: 2
