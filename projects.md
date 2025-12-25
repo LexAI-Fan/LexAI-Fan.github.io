@@ -10,9 +10,11 @@ A reproducible mini-study on **utility–fairness trade-offs** in graph learning
 **Highlights:** scripted sweep · JSON artifacts (config+metrics) · multi-objective trade-offs (Pareto-ready)
 
 **Links:**  
-- Repo: https://github.com/LexAI-Fan/<Fan-lex-ai_Fairness_Utility_GraphLearning>  
-- Release v1.0.0: https://github.com/LexAI-Fan/<YOUR_REPO_NAME>/releases/tag/v1.0.0  
-- Results summary: https://github.com/LexAI-Fan/<YOUR_REPO_NAME>/blob/main/docs/results_summary.md
+- Repo: https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning  
+- Release v1.0.0: https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/releases/tag/v1.0.0  
+- Results summary: https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/blob/main/docs/results_summary.md  
+- Citation: https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/blob/main/CITATION.cff
+
 
 <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:12px;">
   <div style="flex:1; min-width:280px;">
