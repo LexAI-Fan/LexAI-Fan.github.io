@@ -1,4 +1,4 @@
-## Fairness–Utility Trade-offs in Graph Learning {#fairness-utility}
+<h2 id="fairness-utility">Fairness–Utility Trade-offs in Graph Learning</h2>
 
 A reproducible mini-study on **utility–fairness trade-offs** in graph learning (node classification + link prediction), with **scripted sweeps**, **JSON audit trails**, and **trade-off plots**.
 
