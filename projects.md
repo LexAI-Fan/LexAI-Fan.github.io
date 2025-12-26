@@ -1,14 +1,16 @@
-<h2 id="fairness-utility">Fairness–Utility Trade-offs in Graph Learning</h2>
+## Fairness–Utility Trade-offs in Graph Learning {#fairness-utility}
 
 A reproducible mini-study on **utility–fairness trade-offs** in graph learning (node classification + link prediction), with **scripted sweeps**, **JSON audit trails**, and **trade-off plots**.
 
 **Highlights:** scripted sweep · JSON artifacts (config + metrics) · multi-objective trade-offs (Pareto-ready)
+**Key takeaway:** Fairness improves early and largely plateaus around λ≈0.3, while utility drops faster beyond that point.
+
 
 **Links:**  
-- Repo: https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning  
-- Release v1.0.0: https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/releases/tag/v1.0.0  
-- Results summary: https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/blob/main/docs/results_summary.md  
-- Decision memo: https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/blob/main/docs/decision_memo.md
+- [Repo](https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning)  
+- [Release v1.0.0](https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/releases/tag/v1.0.0)  
+- [Results summary](https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/blob/main/docs/results_summary.md)  
+- [Decision memo](https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/blob/main/docs/decision_memo.md)
 
 **Reproduce (Windows PowerShell):**
 - Run a full sweep: `.\scripts\run_sweep.ps1`
