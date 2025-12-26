@@ -1,7 +1,9 @@
 ---
-layout: home
-title: Home
+layout: page
+title: Home (Markdown)
+permalink: /home/
 ---
+
 **Hi, I’m Fan Xuejiao (Ariel).**  
 I work at the intersection of **Artificial Intelligence & Law**—algorithmic justice, data governance, and socio-technical design.
 
