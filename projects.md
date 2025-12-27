@@ -11,6 +11,9 @@ A reproducible mini-study on **utility–fairness trade-offs** in graph learning
 - [Release v1.0.0](https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/releases/tag/v1.0.0)  
 - [Results summary](https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/blob/main/docs/results_summary.md)  
 - [Decision memo](https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/blob/main/docs/decision_memo.md)
+- [Pilot study results (N=6)](https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/blob/main/docs/pilot_hci_study.md)
+
+
 
 **Reproduce (Windows PowerShell):**
 - Run a full sweep: `.\scripts\run_sweep.ps1`
