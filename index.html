@@ -1,278 +1,328 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fan Xuejiao (Ariel) - Personal Homepage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #007bff;
-            --text-color: #34495e;
-            --heading-color: #2c3e50;
-            --background-color: #f8f9fa;
-            --container-bg: #ffffff;
-            --border-color: #eef2f7;
-            --subtle-text-color: #7f8c8d;
-        }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.7;
-            color: var(--text-color);
-            background-color: var(--background-color);
-            margin: 0;
-            padding: 0;
-        }
-        
-        .hero-section {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background/background1.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 60px 20px;
-        }
-        .hero-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .hero-avatar {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 4px solid rgba(255, 255, 255, 0.8);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            object-fit: cover;
-        }
-        .hero-text {
-            margin-left: 30px;
-            text-align: left;
-        }
-        .hero-text h1 {
-            color: white;
-            font-size: 3em;
-            font-weight: 700;
-            margin: 0;
-            border: none;
-        }
-        .hero-text .contact-info {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-        .hero-text .contact-info a {
-            color: white;
-            font-weight: 600;
-            text-decoration: none;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            transition: border-bottom 0.3s ease;
-        }
-        .hero-text .contact-info a:hover {
-            border-bottom: 1px solid white;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fan Xuejiao (Ariel) - Personal Homepage</title>
 
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: var(--container-bg);
-            border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.07);
-            padding: 40px 50px;
-            position: relative;
-            z-index: 5;
-        }
-        h2, h3 {
-            color: var(--heading-color);
-            font-weight: 700;
-        }
-        h2 {
-            font-size: 1.8em;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 10px;
-        }
-        h3 {
-             font-size: 1.1em;
-             font-weight: 600;
-        }
-        .section {
-            margin-bottom: 35px;
-        }
-        .experience-item {
-            margin-bottom: 25px;
-            padding-bottom: 25px;
-            border-bottom: 1px solid var(--border-color);
-        }
-        .experience-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        .job-title {
-            font-weight: 600;
-            font-size: 1.2em;
-            color: var(--heading-color);
-        }
-        .job-meta {
-            color: var(--subtle-text-color);
-            font-style: italic;
-            margin-bottom: 10px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .skill-category {
-            background-color: #fdfdfd;
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .skill-category:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 
-        /* Featured callout */
-        .featured-callout {
-            margin-top: 16px;
-            padding: 14px 16px;
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            background: #fbfcfe;
-        }
-        .featured-callout b {
-            color: var(--heading-color);
-        }
-        .featured-links a {
-            text-decoration: none;
-            border-bottom: 1px solid rgba(0,123,255,.35);
-        }
-        .featured-links a:hover {
-            border-bottom: 1px solid rgba(0,123,255,.9);
-        }
+  <style>
+    :root {
+      --primary-color: #007bff;
+      --text-color: #34495e;
+      --heading-color: #2c3e50;
+      --background-color: #f8f9fa;
+      --container-bg: #ffffff;
+      --border-color: #eef2f7;
+      --subtle-text-color: #7f8c8d;
+    }
 
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            color: #aaa;
-            border-top: 1px solid var(--border-color);
-        }
-    </style>
+    body {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--text-color);
+      background-color: var(--background-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero-section {
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/images/background/background1.jpg");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 60px 20px;
+    }
+
+    .hero-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero-avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
+    }
+
+    .hero-text {
+      margin-left: 30px;
+      text-align: left;
+    }
+
+    .hero-text h1 {
+      color: #fff;
+      font-size: 3em;
+      font-weight: 700;
+      margin: 0;
+      border: none;
+    }
+
+    .hero-text .contact-info {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .hero-text .contact-info a {
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      transition: border-bottom 0.3s ease;
+    }
+
+    .hero-text .contact-info a:hover {
+      border-bottom: 1px solid #fff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: var(--container-bg);
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.07);
+      padding: 40px 50px;
+      position: relative;
+      z-index: 5;
+    }
+
+    h2, h3 {
+      color: var(--heading-color);
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1.1em;
+      font-weight: 600;
+    }
+
+    .section {
+      margin-bottom: 35px;
+    }
+
+    .experience-item {
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .experience-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .job-title {
+      font-weight: 600;
+      font-size: 1.2em;
+      color: var(--heading-color);
+    }
+
+    .job-meta {
+      color: var(--subtle-text-color);
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-category {
+      background-color: #fdfdfd;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-category:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Featured callout */
+    .featured-callout {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      background: #fbfcfe;
+    }
+
+    .featured-callout b {
+      color: var(--heading-color);
+    }
+
+    .featured-links a {
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0, 123, 255, 0.35);
+    }
+
+    .featured-links a:hover {
+      border-bottom: 1px solid rgba(0, 123, 255, 0.9);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      color: #aaa;
+      border-top: 1px solid var(--border-color);
+    }
+  </style>
 </head>
+
 <body>
-    
-    <header class="hero-section">
-        <div class="hero-content">
-            <img src="/images/PROFILE.jpg" alt="Fan Xuejiao (Ariel) profile picture" class="hero-avatar">
-            <div class="hero-text">
-                <h1>Fan Xuejiao (Ariel)</h1>
-                <p class="contact-info">
-                    Beijing, China | <a href="mailto:fanlaplace369@gmail.com">fanlaplace369@gmail.com</a>
-                </p>
-            </div>
-        </div>
-    </header>
+  <header class="hero-section">
+    <div class="hero-content">
+      <img
+        src="/images/PROFILE.jpg"
+        alt="Fan Xuejiao (Ariel) profile picture"
+        class="hero-avatar"
+      />
+      <div class="hero-text">
+        <h1>Fan Xuejiao (Ariel)</h1>
+        <p class="contact-info">
+          Beijing, China |
+          <a href="mailto:fanlaplace369@gmail.com">fanlaplace369@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </header>
 
-    <div class="container">
-        
-        <div class="section" id="profile">
-            <h2>Profile</h2>
-            <p>
-                Research applicant focusing on making LLM system behaviour legible by combining learning with reasoning, calibrated uncertainty, selective abstention, and rationale logging. My work in Accountable ML & AI governance involves protocol compilation (YAML), rationale/change logs, and designing dispute/appeal workflows for trustworthy deployment. I prototype study UIs (Figma/HTML/CSS/JS) and run fully reproducible analyses (Docker, seeds, artefact hashes).
-            </p>
+  <div class="container">
+    <div class="section" id="profile">
+      <h2>Profile</h2>
+      <p>
+        Research applicant focusing on making LLM system behaviour legible by combining learning with
+        reasoning, calibrated uncertainty, selective abstention, and rationale logging. My work in
+        Accountable ML &amp; AI governance involves protocol compilation (YAML), rationale/change logs,
+        and designing dispute/appeal workflows for trustworthy deployment. I prototype study UIs
+        (Figma/HTML/CSS/JS) and run fully reproducible analyses (Docker, seeds, artefact hashes).
+      </p>
 
-            <!-- Featured (single place, no duplicates) -->
-            <div class="featured-callout">
-                <p style="margin:0;">
-                    <b>Featured:</b>
-                    <a href="/projects/#fairness-utility">Fairness–Utility Trade-offs in Graph Learning</a>
-                    — reproducible sweep + audit-ready artifacts.
-                </p>
-            </div>
-        </div>
-
-        <div class="section" id="experience">
-            <h2>Research Experience</h2>
-            <div class="experience-item">
-                <p class="job-title">Research Assistant (part-time)</p>
-                <p class="job-meta">School of Computer Science, Beijing Institute of Technology | 2024-Present</p>
-                <ul>
-                    <li>Prototyped conversational-agent UIs (identity cues; uncertainty/refusal messaging) with full interaction logging (Figma, HTML/CSS/JS).</li>
-                    <li>Implemented calibrated uncertainty and selective abstention; analysed accuracy, time-on-task, and trust metrics (Python/R).</li>
-                    <li>Compiled stakeholder preferences into executable YAML protocols; tuned operating points (τ for precision at minimum coverage; source-weighting ω).</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <p class="job-title">Research Assistant</p>
-                <p class="job-meta">Institute of Intelligent Rule of Law, Tsinghua University | 2022-2023</p>
-                <ul>
-                    <li>Translated legal/policy requirements into audit checklists and machine-readable protocols; stress-tested thresholds to balance FP/FN risk.</li>
-                    <li>Mapped fairness, verifiability, and reliability to concrete evaluation metrics and sampling rules; maintained rationale/change logs.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <p class="job-title">Policy/UX Intern, Content Governance</p>
-                <p class="job-meta">ByteDance | 2021</p>
-                <ul>
-                    <li>Converted platform rules and appeal data into monitoring metrics (misclassification, dispute tickets, latency) and decision logs.</li>
-                    <li>Facilitated cross-functional reviews (Policy, Legal, Product) with structured rationales to justify rule updates.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section" id="skills">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>HCI & Methods</h3>
-                    <p>User-centred design; consent/debrief; task & survey design; within-subject and A/B studies; basic thematic analysis.</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Quant & Tools</h3>
-                    <p>Python (pandas; basic scikit-learn); R (t-tests, bootstrap CIs, effect sizes); Git; Docker; OSF/Zenodo; preregistration.</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Front-end & Prototyping</h3>
-                    <p>Figma; HTML/CSS/JS for study UIs and lightweight dashboards; instrumentation & logging.</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Governance & Knowledge Representation</h3>
-                    <p>GDPR/PIPL; algorithmic accountability; policy → metrics/protocols; argument maps → YAML rule templates.</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Reproducibility</h3>
-                    <p>Locked dependencies; deterministic seeds; containerised runs; make-reproduce scripts.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section" id="education">
-            <h2>Education</h2>
-            <div class="experience-item">
-                <p><span class="job-title">JM (Juris Master), Interdisciplinary Law and Computer Science</span><br><span class="job-meta">Beijing Institute of Technology | GPA: 3.73/4.00</span></p>
-            </div>
-            <div class="experience-item">
-                <p><span class="job-title">B.Econ. International Economics & Trade (Science Track)</span><br><span class="job-meta">Xi'an International University | GPA: 3.70/4.00</span></p>
-            </div>
-        </div>
-        
-        <footer>
-            <p>&copy; 2025 Fan Xuejiao (Ariel). All Rights Reserved.</p>
-        </footer>
+      <!-- Featured (single place, no duplicates) -->
+      <div class="featured-callout">
+        <p style="margin: 0 0 6px 0;">
+          <b>Featured:</b>
+          <a href="/projects/#fairness-utility">Fairness–Utility Trade-offs in Graph Learning</a>
+          — reproducible sweep + audit-ready artifacts.
+        </p>
+        <p class="featured-links" style="margin: 0;">
+          <a href="https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning" target="_blank" rel="noopener noreferrer">Repo</a> ·
+          <a href="https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">Release</a> ·
+          <a href="https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/blob/main/docs/results_summary.md" target="_blank" rel="noopener noreferrer">Summary</a> ·
+          <a href="https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning/blob/main/docs/pilot_hci_study.md" target="_blank" rel="noopener noreferrer">Pilot (N=6)</a>
+        </p>
+      </div>
     </div>
 
+    <div class="section" id="experience">
+      <h2>Research Experience</h2>
+
+      <div class="experience-item">
+        <p class="job-title">Research Assistant (part-time)</p>
+        <p class="job-meta">School of Computer Science, Beijing Institute of Technology | 2024-Present</p>
+        <ul>
+          <li>Prototyped conversational-agent UIs (identity cues; uncertainty/refusal messaging) with full interaction logging (Figma, HTML/CSS/JS).</li>
+          <li>Implemented calibrated uncertainty and selective abstention; analysed accuracy, time-on-task, and trust metrics (Python/R).</li>
+          <li>Compiled stakeholder preferences into executable YAML protocols; tuned operating points (τ for precision at minimum coverage; source-weighting ω).</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <p class="job-title">Research Assistant</p>
+        <p class="job-meta">Institute of Intelligent Rule of Law, Tsinghua University | 2022-2023</p>
+        <ul>
+          <li>Translated legal/policy requirements into audit checklists and machine-readable protocols; stress-tested thresholds to balance FP/FN risk.</li>
+          <li>Mapped fairness, verifiability, and reliability to concrete evaluation metrics and sampling rules; maintained rationale/change logs.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <p class="job-title">Policy/UX Intern, Content Governance</p>
+        <p class="job-meta">ByteDance | 2021</p>
+        <ul>
+          <li>Converted platform rules and appeal data into monitoring metrics (misclassification, dispute tickets, latency) and decision logs.</li>
+          <li>Facilitated cross-functional reviews (Policy, Legal, Product) with structured rationales to justify rule updates.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>HCI &amp; Methods</h3>
+          <p>User-centred design; consent/debrief; task &amp; survey design; within-subject and A/B studies; basic thematic analysis.</p>
+        </div>
+        <div class="skill-category">
+          <h3>Quant &amp; Tools</h3>
+          <p>Python (pandas; basic scikit-learn); R (t-tests, bootstrap CIs, effect sizes); Git; Docker; OSF/Zenodo; preregistration.</p>
+        </div>
+        <div class="skill-category">
+          <h3>Front-end &amp; Prototyping</h3>
+          <p>Figma; HTML/CSS/JS for study UIs and lightweight dashboards; instrumentation &amp; logging.</p>
+        </div>
+        <div class="skill-category">
+          <h3>Governance &amp; Knowledge Representation</h3>
+          <p>GDPR/PIPL; algorithmic accountability; policy → metrics/protocols; argument maps → YAML rule templates.</p>
+        </div>
+        <div class="skill-category">
+          <h3>Reproducibility</h3>
+          <p>Locked dependencies; deterministic seeds; containerised runs; make-reproduce scripts.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="education">
+      <h2>Education</h2>
+      <div class="experience-item">
+        <p>
+          <span class="job-title">JM (Juris Master), Interdisciplinary Law and Computer Science</span><br />
+          <span class="job-meta">Beijing Institute of Technology | GPA: 3.73/4.00</span>
+        </p>
+      </div>
+      <div class="experience-item">
+        <p>
+          <span class="job-title">B.Econ. International Economics &amp; Trade (Science Track)</span><br />
+          <span class="job-meta">Xi'an International University | GPA: 3.70/4.00</span>
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Fan Xuejiao (Ariel). All Rights Reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
