@@ -1,10 +1,12 @@
 ## Fairness–Utility Trade-offs in Graph Learning {#fairness-utility}
 
 A reproducible mini-study on **utility–fairness trade-offs** in graph learning (node classification + link prediction), with **scripted sweeps**, **JSON audit trails**, and **trade-off plots**.
-
 **Highlights:** scripted sweep · JSON artifacts (config + metrics) · multi-objective trade-offs (Pareto-ready)
-**Key takeaway:** Fairness improves early and largely plateaus around λ≈0.3, while utility drops faster beyond that point.
-Takeaway: In a pilot (N=6), the interactive explorer reduced mean decision time (46.3s → 24.8s) and errors (33% → 8%) vs. a static table, with higher confidence and lower cognitive load.
+
+**Key takeaways:**
+- Fairness improves early and largely plateaus around λ≈0.3, while utility drops faster beyond that point.
+- In a pilot (N=6), the interactive explorer reduced mean decision time (46.3s → 24.8s) and errors (33% → 8%) vs. a static table, with higher confidence and lower cognitive load.
+
 
 **Links:**  
 - [Repo](https://github.com/LexAI-Fan/Fan-lex-ai_Fairness_Utility_GraphLearning)  
